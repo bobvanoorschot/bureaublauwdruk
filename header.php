@@ -22,6 +22,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php show_admin_bar( true ); ?>
 
   <div class="header">
     <div class="header-logo">

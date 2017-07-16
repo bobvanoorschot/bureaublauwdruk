@@ -29,6 +29,7 @@
 }
 .current_page_item {
   text-decoration: line-through;
+  
 }
 .main-menu nav ul li a:hover {
   color: black;
