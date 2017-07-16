@@ -6,3 +6,15 @@ body {
   padding: 0% 2.5%;
   width: 95%;
 }
+.project {
+  width: 100%;
+  min-height: 70vh;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.project-title {
+  /*margin-top: -120px*/
+  width: 100%
+}
