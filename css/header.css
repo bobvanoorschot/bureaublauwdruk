@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 2.5%;
+  height: 45px;
+}
+.header-logo {
+  color: #000;
+  font-size: 45px;
+  font-family: "blauwdruk"
+}
+nav.main-menu {
+
+}
+
+@font-face {
+  font-family: "blauwdruk";
+  src:url('../font/Blauwdruk.ttf');
+}

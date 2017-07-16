@@ -23,4 +23,12 @@
 
 <body <?php body_class(); ?>>
 
+  <div class="header">
+    <div class="header-logo">
+      Bureau Blauwdruk
+    </div>
+    <nav class="main-menu">
+
+    </nav>
+  </div>
   <div class="site-content">

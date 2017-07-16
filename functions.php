@@ -1,11 +1,20 @@
 <?php
 
-// Include the class (unless you are using the script as a plugin)
-require_once( 'wp-content/plugins/wp-less/wp-less.php' );
+function theme_styles() {
 
-// enqueue a .less style sheet
-if ( ! is_admin() )
-    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.less' );
+  wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css' );
+  wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
+  wp_enqueue_style( 'header', get_template_directory_uri() . '/css/header.css' );
 
-// you can also use .less files as mce editor style sheets
-// add_editor_style( 'editor-style.less' );
+}
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      // 'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );

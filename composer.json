@@ -6,14 +6,5 @@
             "name": "Bob van Oorschot",
             "email": "bvanoorschot@bukazu.com"
         }
-    ],
-    "repositories": [
-      {
-          "type": "git",
-          "url": "https://github.com/sanchothefat/wp-less.git"
-      }
-    ],
-    "require": {
-      "icit/wp-less": "dev-master"
-    }
+    ],    
 }
