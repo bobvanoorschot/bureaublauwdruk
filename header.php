@@ -25,10 +25,20 @@
 
   <div class="header">
     <div class="header-logo">
-      Bureau Blauwdruk
+      <?php bloginfo( 'name' ); ?>
     </div>
-    <nav class="main-menu">
+    <div class="main-menu">
+			<?php
+				$defaults = array(
+						'menu' => 'header-menu',
+						'menu_class' => '',
+						'container' => 'nav',
+						);
+				wp_nav_menu( $defaults );
+				// get_search_form();
+			?>
 
-    </nav>
+    </div>
+
   </div>
   <div class="site-content">

@@ -1,19 +1,50 @@
 .header {
-  width: 100%;
+  width: 95%;
   background-color: #fff;
   padding: 25px 2.5%;
   height: 45px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 .header-logo {
   color: #000;
   font-size: 45px;
   font-family: "blauwdruk"
 }
-nav.main-menu {
-
+.main-menu nav ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: "CenturyGothic";
+}
+.main-menu nav ul li {
+  padding: 10px;
+}
+.main-menu nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.current_page_item {
+  text-decoration: line-through;
+}
+.main-menu nav ul li a:hover {
+  color: black;
+}
+.main-menu nav ul li a:visited {
+  color: black;
+  /*text-decoration: line-through;*/
 }
 
 @font-face {
   font-family: "blauwdruk";
   src:url('../font/Blauwdruk.ttf');
+}
+
+
+@font-face {
+  font-family: "CenturyGothic";
+  src:url('../font/CenturyGothic.ttf');
 }
