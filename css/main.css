@@ -93,3 +93,15 @@ body {
   align-items: center;
 
 }
+
+
+/*GENERAL PAGE*/
+.page-title {
+  border-bottom: 2px solid black;
+}
+.page-title h1 {
+  margin-bottom: 0px;
+}
+.page-content {
+  margin-top: 20px;
+}
