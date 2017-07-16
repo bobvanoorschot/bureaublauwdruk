@@ -34,7 +34,7 @@ function register_project() {
 		"rewrite" => array( "slug" => "project", "with_front" => true ),
 		"query_var" => true,
 
-		"supports" => array( "title", "editor" ,"thumbnail"),
+		"supports" => array( "title", "editor", "excerpt" ,"thumbnail"),
 		"taxonomies" => array( "post_tag" )
 	);
 
