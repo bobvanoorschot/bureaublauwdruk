@@ -26,7 +26,9 @@
 
   <div class="header">
     <div class="header-logo">
-      <?php bloginfo( 'name' ); ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<?php bloginfo( 'name' ); ?>
+			</a>
     </div>
     <div class="main-menu">
 			<?php
