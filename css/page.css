@@ -1,0 +1,5 @@
+.container {
+    display: grid;
+    display: -ms-grid;
+    padding: 0px 50px;
+}

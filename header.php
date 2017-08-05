@@ -11,6 +11,8 @@
 ?><!DOCTYPE html>
 <html lang="nl">
 <head>
+	<title><?php the_title(); ?></title>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -25,9 +27,9 @@
 	<?php show_admin_bar( true ); ?>
 
   <div class="header">
-    <div class="header-logo">
+    <a class="header-logo" href="<?php bloginfo('url') ?>">
       <?php bloginfo( 'name' ); ?>
-    </div>
+    </a>
     <div class="main-menu">
 			<?php
 				$defaults = array(
