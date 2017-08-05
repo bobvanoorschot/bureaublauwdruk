@@ -27,9 +27,13 @@
 	<?php show_admin_bar( true ); ?>
 
   <div class="header">
-    <a class="header-logo" href="<?php bloginfo('url') ?>">
-      <?php bloginfo( 'name' ); ?>
-    </a>
+
+    <div class="header-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<?php bloginfo( 'name' ); ?>
+			</a>
+    </div>
+
     <div class="main-menu">
 			<?php
 				$defaults = array(
