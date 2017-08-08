@@ -1,0 +1,23 @@
+.form {
+  font-family: @primaryFont;
+  padding: 0px 24px;
+  &-input {
+    padding: 8px 0px;
+    &-label {
+      font-size:  1.4rem;
+      padding-bottom: 8px;
+       }
+    &-field {
+      input {
+        width: 50%;
+        border: 1px solid @primaryColor;
+        font-family: @primaryFont;
+        font-size: 1.2rem;
+        padding: 6px;
+      }
+      input['placekolder'] {
+        font-family: @primaryFont;
+      }
+    }
+  }
+}

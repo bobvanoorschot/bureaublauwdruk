@@ -1,0 +1,128 @@
+@mobile:    		~"only screen and (max-width: 767px)";
+@tablet-all:		~"only screen and (min-width: 768px) and (max-width: 1024px)";
+@tablet-portrait:   ~"only screen and (min-width: 768px) and (max-width: 991px)";
+@tablet-landscape:	~"only screen and (min-width: 992px) and (max-width: 1024px)";
+@desktop:   		~"only screen and (min-width: 1025px)";
+@container:			~"only screen and (min-width: 1432px)";
+
+.cms-block {
+    padding: 10px !important;
+
+	@media @mobile {
+		padding: 0px !important;
+	}
+
+	&:last-child {
+		padding: 10px 0px 10px 10px !important;
+
+		@media @mobile {
+			padding: 0px !important;
+		}
+	}
+
+	&:first-child {
+		padding: 10px 10px 10px 0px !important;
+
+		@media @mobile {
+			padding: 0px !important;
+		}
+
+		&:last-child {
+			padding: 10px 0px !important;
+
+			@media @mobile {
+				padding: 0px !important;
+			}
+		}
+	}
+}
+
+.container {
+	width: 100%;
+	padding: 0 16px;
+	margin: 0 auto;
+
+	@media @container {
+		max-width: 1432px;
+	}
+  @media @mobile {
+    padding: 0px;
+  }
+}
+
+.flex-row {
+	body & {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	body.android-stock & {
+		&:after {
+			clear: both;
+			content: '';
+			display: table;
+		}
+	}
+}
+
+.flex-column(@d, @tl, @tp, @m) {
+	body & {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+
+		@media @desktop {
+			max-width: @d;
+			width: @d;
+			-webkit-flex: 0 0 @d;
+			-ms-flex: 0 0 @d;
+			flex: 0 0 @d;
+		}
+
+		@media @tablet-landscape {
+			max-width: @tl;
+			width: @tl;
+			-webkit-flex: 0 0 @tl;
+			-ms-flex: 0 0 @tl;
+			flex: 0 0 @tl;
+		}
+
+		@media @tablet-portrait {
+			max-width: @tp;
+			width: @tp;
+			-webkit-flex: 0 0 @tp;
+			-ms-flex: 0 0 @tp;
+			flex: 0 0 @tp;
+		}
+
+		@media @mobile {
+			max-width: @m;
+			width: @m;
+			-webkit-flex: 0 0 @m;
+			-ms-flex: 0 0 @m;
+			flex: 0 0 @m;
+		}
+	}
+
+	body.android-stock & {
+		@media @tablet-landscape {
+			float: left;
+			width: @tl;
+		}
+
+		@media @tablet-portrait {
+			float: left;
+			width: @tp;
+		}
+
+		@media @mobile {
+			float: left;
+			width: @m;
+		}
+	}
+}
