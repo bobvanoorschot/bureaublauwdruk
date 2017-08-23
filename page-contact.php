@@ -54,6 +54,17 @@ Template Name: Contact Page
                     <input type="text" name="telefoon" value="" placeholder="Uw telefoonnummer">
                   </div>
                 </div>
+                <div class="form-input">
+                  <div class="form-input-label">
+                    Bericht
+                  </div>
+                  <div class="form-input-field">
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                  </div>
+                </div>
+                <div class="form-input">
+                  <button type="submit">Verstuur formulier</button>
+                </div>
 
               </form>
             </div>

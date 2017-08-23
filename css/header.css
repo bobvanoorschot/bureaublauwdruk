@@ -7,6 +7,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(225, 225, 225, 0.5);
 }
 .header-logo {
   color: #000;
